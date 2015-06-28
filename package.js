@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Publish pageviews and events to Google Analytics using the new analytics.js code with settings.",
-    version: "0.2.3",
+    version: "0.2.4",
     name: "laboratory:ganalytics",
     git: 'https://github.com/Laboratory/meteor-ganalytics.git'
 });
