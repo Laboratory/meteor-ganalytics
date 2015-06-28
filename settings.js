@@ -2,7 +2,8 @@ fs = Npm.require('fs');
 
 try {
     //read data from file ./private/settings.ga.json
-    settingsString = fs.readFileSync(process.env.PWD + '/private/settings.ga.json');
+    dir = Npm.require('path').normalize(__meteor_bootstrap__.serverDir + '/assets/app/settings.ga.json');
+    settingsString = fs.readFileSync(dir);
     //parse to json
     settings = JSON.parse(settingsString);
     //create Meteor.settings if settings is null
