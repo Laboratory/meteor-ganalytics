@@ -14,5 +14,5 @@ try {
     __meteor_runtime_config__.PUBLIC_SETTINGS = Meteor.settings.public;
 }
 catch (err) {
-    console.info('Error reading setting file from private/settings.ga.json', err);
+    console.info('Error reading setting file from /assets/app/settings.ga.json', err);
 }
